@@ -1,14 +1,17 @@
-body
+body {
   font-size: 14px;
 }
+/* opening curly brace was missed before the body selector */
 
 nav {
-  background color: yellow;
+  background-color: yellow;
   height: 100px;
   margin-top: -10px;
   position: fixed;
   width: 100%;
-
+}
+/* closing curly brace was missed after the nav selector */
+/* A dash was missed between background and color */
 
 section {
   margin: 0 auto;
@@ -16,14 +19,18 @@ section {
 }
 
 h1 {
-  font-family sans-serif;
+  font-family: sans-serif;
   font-size: 2em;
 }
+/* A colon was missed after the font-family */
 
-.example, h3 {
+.example h3 {
   padding-top: 30px;
-  text-align center
+  text-align: center;
 }
+/*An unnecessary comma was existed between .example and h3*/
+/* A semicolon was missed after center */
+/* A colon was missed after the text-align */
 
 h3 {
   font-size: 1.3em;
@@ -32,5 +39,11 @@ h3 {
 .element {
   background-color: green;
   height: 100px;
-  margin 10px 0;
+  margin: 10px 0;
   width: 100%;
+}
+/*closing curly brace was missed after .element*/
+.element2 {
+  background-color: red;
+}
+/* The class of last three div was changed to element2. Then the background color of three last div was changed to red. */
